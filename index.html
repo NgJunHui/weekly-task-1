@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <div>
+            <h1>Welcome to JH ATM</h1>
+            <h3 id="title">Enter Pin</h2>
+                <form>
+                    <input type="password" id="password">
+                </form>
+                <button onclick="enterPassword()" class="btn" id="enter-pw">Enter</button>
+                <p id="wrong-pw"></p>
+        </div>
+
+        <div>
+            <p id="showAmount"></p>
+            <form>
+                <input type="number" id="amount" class="function">
+            </form>
+            <button onclick="withdrawCash()" class="function" id="withdraw">Withdraw Cash</button>
+            <button onclick="calcWithdraw()" class="function" id="withdrawBtn">Withdraw</button>
+            <p id="afterWithdraw2"></p>
+            <p id="afterWithdraw"></p>
+        </div>
+
+        <div>
+            <p id="showAmount"></p>
+            <form>
+                <input type="number" id="depoamount" class="function">
+            </form>
+            <button onclick="depositCash()" class="function" id="deposit">Deposit Cash</button>
+            <button onclick="calcDeposit()" class="function" id="depositBtn">Deposit</button>
+            <p id="afterDeposit2"></p>
+            <p id="afterDeposit"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
